@@ -25,3 +25,9 @@ if __name__ == "__main__":
     # calculate the tf-idf matrix
     tf_idf_matrix = extract_data.calculate_tf_idf()
 
+    # get the important sentences
+    important_sentences = extract_data.get_important_sentences(3)
+
+    # print out the summary
+    important_sentences = " ".join(important_sentences)    
+    print(important_sentences)
